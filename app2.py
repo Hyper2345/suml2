@@ -43,7 +43,7 @@ def main():
 
 	with prediction:
 		st.subheader("Czy taka osoba dozna choroby serca?")
-		st.subheader(("Tak" if health[0] == 1 else "Nie"))
+		st.subheader(("Tak" if health[0] == 0 else "Nie"))
 		st.write("Pewność predykcji {0:.2f} %".format(s_confidence[0][health][0] * 100))
 
 if __name__ == "__main__":
